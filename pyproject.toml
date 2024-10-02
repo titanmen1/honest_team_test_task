@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "honest-team-test"
+version = "0.1.0"
+description = ""
+authors = ["Artem Arkhipov <a.arkhipov@docet.ai>"]
+readme = "README.md"
+packages = [{ include = "bot" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+telethon = {git = "https://github.com/kshubham506/Telethon"}
+python-dotenv = "^1.0.1"
+aiosqlite = "^0.20.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
